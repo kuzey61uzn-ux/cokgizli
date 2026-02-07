@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align:center; background:#111; color:white;">
+<head>
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+}
 
-<h1 style="font-size:120px;">⭐</h1>
-<h2 style="font-size:80px;">804</h2>
-<p style="font-size:30px;">kodlama işi biraz zormus </p>
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+.content {
+  position: relative;
+  top: 40vh;
+}
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<div class="content">
+  <h1 style="font-size:120px;">⭐</h1>
+  <h2 style="font-size:80px;">804</h2>
+  <p style="font-size:30px;">kodlama işi biraz zormus </p>
+</div>
 
 </body>
 </html>
